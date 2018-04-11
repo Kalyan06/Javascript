@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<style>
+		.v
+		{
+			border: 2px solid blue;
+			width: 100px;
+			float: left;
+			margin: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Sorting Elements in an array.</h2>
+	Array <div  id="array"></div><br/>
+	Ascending order<br/><div class="v" id="as"></div>
+	Descending order<br/><div class="v" id="ds"></div>
+	<script type="text/javascript">
+		var obj1=document.getElementById("as");
+		var obj2=document.getElementById("ds");
+		
+		var ar=[9, 5, 3, 4, 15, 26, 18, 12, 95, 68, 55, 24, 66, 35, 77, 63, 96, 10, 6];
+		document.getElementById("array").innerHTML=ar;		
+		
+		var asort=ar.sort(function(a, b){return a-b});
+		
+		var asort1=asort;
+		
+		
+		alert(asort);
+		alert(dsort);
+		temp='';
+		for (var i = 0; i < asort.length; i++) {
+			{
+				temp=temp+asort[i]+'<br/>';
+			}
+		}
+		obj1.innerHTML=temp;
+		var dsort=asort1.reverse();
+		temp='';
+		for (var i = 0; i < dsort.length; i++) {
+			{
+				temp=temp+dsort[i]+'<br/>';
+			}
+		}
+		obj2.innerHTML=temp;
+	</script>
+</body>
+</html>

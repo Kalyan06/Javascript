@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- 
+11. Find out largest number in the given array.	
+12. Find out smallest number in the given array.	
+ -->
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Array elements</h2>
+	<div id="ae"></div>
+	<h2>Sorted Array</h2>
+	<div id="sa"></div>
+	<h2>Largest number in array</h2>
+	<div id="ln"></div>
+	<h2>Smallest number in array</h2>
+	<div id="sn"></div>
+	<script>
+		var ar  = [9, 5, 3, 4, 15, 26, 18, 12, 95, 68, 55, 24, 66, 35, 77, 63, 96, 10, 6, 96];
+		document.getElementById("ae").innerHTML=ar;
+		ar=ar.sort(function(a,b){return a-b});
+		document.getElementById("sa").innerHTML=ar;
+		document.getElementById("ln").innerHTML=ar[ar.length-1];
+		document.getElementById("sn").innerHTML=ar[0];
+	</script>
+</body>
+</html>

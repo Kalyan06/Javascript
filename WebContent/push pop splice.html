@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- 
+10. Perform add/remove items in arrays using following methods:
+	a. push
+	b. pop
+	c. splice() -->
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Push Pop Splice</h2><hr/>
+	Enter number&nbsp;<input id="t1" /><br></br>
+	<input type="button"  value="Push" onclick="f1()"/>&nbsp;
+	<input type="button"  value=" Pop " onclick="f2()"/>&nbsp;
+	<input type="button"  value="Splice" onclick="f3()"/><br/>
+	<h3 id="i1"></h3>
+	<h3 id="i2"></h3>
+	<script>
+		var ar  = [9, 5, 3, 4, 15, 26, 18, 12, 95, 68, 55, 24, 66, 35, 77, 63, 96, 10, 6];
+		function f1() {
+			var v=document.getElementById("t1").value;
+			document.getElementById("i1").innerHTML=ar;
+			ar.push(v);
+			document.getElementById("i2").innerHTML=ar;
+		}
+		function f2() {
+			document.getElementById("i1").innerHTML=ar;
+			ar.pop();
+			document.getElementById("i2").innerHTML=ar;
+		}
+		function f3() {
+			var v=document.getElementById("t1").value;
+			document.getElementById("i1").innerHTML=ar;
+			var id=ar.indexOf(parseInt(v));
+			ar.splice(id,1);
+			document.getElementById("i2").innerHTML=ar;
+		}
+	</script>
+</body>
+</html>

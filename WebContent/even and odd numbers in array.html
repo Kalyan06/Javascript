@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h2>Even numbers in an array</h2>
+	<div id="even"></div>
+	
+	<h2>Odd numbers in an array</h2>
+	<div id="odd"></div>
+	
+	<script type="text/javascript">
+		var ar=[1,2,3,4,5,6,7,8,9,10,];
+		var obj1=document.getElementById("even");
+		var obj2=document.getElementById("odd");
+		var temp1='';
+		var temp2='';
+		
+		for (var i = 0; i < ar.length; i++) 
+		{
+			if (ar[i]%2==0) {
+				temp1=temp1+ar[i]+'<br/>';
+				alert(ar[i]);
+			}
+			else{
+				temp2=temp2+ar[i]+'<br/>';
+				alert(ar[i]);
+			}
+		}
+		obj1.innerHTML=temp1;
+		obj2.innerHTML=temp2;
+	</script>
+</body>
+</html>

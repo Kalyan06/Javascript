@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function f1() {
+var ar1=[1,2,3,4,5,6,7,8,1,2,1,2];
+var count=0;
+var temp='';
+var z=[];
+var obj=document.getElementById("t1");
+for (var i = 0; i < ar1.length; i++) 
+{
+	for (var j = i; j < ar1.length; j++)
+	{
+		
+		if (ar1[i]==ar1[j]) 
+		{
+			count++;
+			if(count==2)
+			{
+				ar1.pop(ar1[i]);
+				temp=temp+ar1[i]+','
+			}
+		}
+	}
+	count=0;
+}
+obj.value=temp;
+}
+</script>
+</head>
+<body>
+<input type="text" id="t1" />
+<input type="button" onclick="f1();" value="repeat" />
+</body>
+</html>

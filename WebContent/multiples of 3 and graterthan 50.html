@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Multiples of 3 and grater than 50</h2>
+	<div id="mu"></div>
+	<script type="text/javascript">
+		var ar=[9, 5, 3, 4, 15, 26, 18, 12, 95, 68, 55, 24, 66, 35, 77, 63, 96, 10, 6];
+		var obj=document.getElementById("mu");
+		var temp='';
+		for (var i = 0; i < ar.length; i++) {
+			if (ar[i]%3==0 && ar[i]>50) {
+				temp=temp+ar[i]+'<br/>';
+			}
+		}
+		obj.innerHTML=temp;
+	</script>
+</body>
+</html>

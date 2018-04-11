@@ -1,0 +1,17 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h2>Array elements</h2>
+		<div id="a"></div>
+		<script>
+			var ar=[10,20,30,40,50,60,70];
+			var obj=document.getElementById("a");
+			var temp='';
+			for (var i = 0; i < ar.length; i++) {
+				temp=temp+ar[i]+'<br/>';
+			}
+			obj.innerHTML=temp;
+		</script>
+	</body>
+</html>

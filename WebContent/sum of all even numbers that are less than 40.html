@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sum of all even numbers that are less than 40</title>
+</head>
+<body>
+	<h2>Sum of all even numbers that are less than 40</h2>
+	<div id="add"></div>
+	<script type="text/javascript">
+		var ar=[9, 5, 3, 4, 15, 26, 18, 12, 95, 68, 55, 24, 66, 35, 77, 63, 96, 10, 6];
+		var obj=document.getElementById("add");
+		var temp=0;
+		for (var i = 0; i < ar.length; i++) {
+			if (ar[i]<40 && ar[i]%2==0) {
+				temp=temp+ar[i];
+			}
+		}
+		obj.innerHTML=temp;
+	</script>
+</body>
+</html>
