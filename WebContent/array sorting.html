@@ -6,7 +6,6 @@
 	<style>
 		.v
 		{
-			border: 2px solid blue;
 			width: 100px;
 			float: left;
 			margin: 5px;
@@ -15,23 +14,17 @@
 </head>
 <body>
 	<h2>Sorting Elements in an array.</h2>
-	Array <div  id="array"></div><br/>
-	Ascending order<br/><div class="v" id="as"></div>
-	Descending order<br/><div class="v" id="ds"></div>
+	Array <div  id="array"></div><br>
+	Ascending order Descending order<br> <div class="v" id="as"></div> 
+										 <div class="v" id="ds"></div>
+	
 	<script type="text/javascript">
 		var obj1=document.getElementById("as");
 		var obj2=document.getElementById("ds");
-		
 		var ar=[9, 5, 3, 4, 15, 26, 18, 12, 95, 68, 55, 24, 66, 35, 77, 63, 96, 10, 6];
-		document.getElementById("array").innerHTML=ar;		
-		
+		document.getElementById("array").innerHTML=ar;
 		var asort=ar.sort(function(a, b){return a-b});
-		
 		var asort1=asort;
-		
-		
-		alert(asort);
-		alert(dsort);
 		temp='';
 		for (var i = 0; i < asort.length; i++) {
 			{
